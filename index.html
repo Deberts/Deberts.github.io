@@ -1,1 +1,175 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deberts Card Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1D1B17;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #1D1B17;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1D1B17;
+        }
+        .screenshots {
+            display: none; /* Hidden initially */
+        }
+        footer {
+            background-color: #1D1B17;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .language-switch {
+            float: right;
+            margin-top: -20px;
+        }
+        .language-switch button {
+            background-color: #1D1B17;
+            color: white;
+            border: none;
+            padding: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="lang" data-en="Deberts Card Game" data-uk="Карткова гра Деберц">Deberts Card Game</h1>
+    <p class="lang" data-en="Play the classic Deberts card game on your Android device!" data-uk="Грайте в класичну карткову гру Деберц на своєму пристрої Android!">Play the classic Deberts card game on your Android device!</p>
+    <div class="language-switch">
+        <button id="en">English</button>
+        <button id="uk">Українська</button>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Introduction Section -->
+    <div class="section" id="intro">
+        <h2 class="lang" data-en="Introduction" data-uk="Вступ">Introduction</h2>
+        <p class="lang" data-en="Welcome to Deberts, a popular card game now available as a mobile app for Android! Challenge yourself and other players in this exciting, skill-based card game, whether you're a seasoned player or just getting started." 
+           data-uk="Ласкаво просимо до Деберц, популярної карткової гри, яка тепер доступна як мобільний додаток для Android! Викликайте себе та інших гравців у цій захоплюючій грі на майстерність, незалежно від того, чи є ви досвідченим гравцем, чи тільки починаєте.">
+           Welcome to Deberts, a popular card game now available as a mobile app for Android! Challenge yourself and other players in this exciting, skill-based card game, whether you're a seasoned player or just getting started.
+        </p>
+    </div>
+
+    <!-- Features Section -->
+    <div class="section" id="features">
+        <h2 class="lang" data-en="Key Features" data-uk="Ключові особливості">Key Features</h2>
+        <ul>
+            <li class="lang" data-en="Classic Deberts Gameplay" data-uk="Класичний геймплей Деберц">Classic Deberts Gameplay</li>
+            <li class="lang" data-en="Multiplayer Mode: Play with friends online" data-uk="Мультіплеер: Грайте з друзями онлайн">Multiplayer Mode: Play with friends online</li>
+            <li class="lang" data-en="Customizable Game Settings" data-uk="Налаштування гри">Customizable Game Settings</li>
+            <li class="lang" data-en="Offline Mode" data-uk="Офлайн режим">Offline Mode</li>
+            <li class="lang" data-en="Player Rating System" data-uk="Рейтингова система">Offline Mode</li>
+            <li class="lang" data-en="User-Friendly Interface" data-uk="Зручний інтерфейс">User-Friendly Interface</li>
+        </ul>
+    </div>
+
+    <!-- Gameplay Instructions Section -->
+    <div class="section" id="instructions">
+        <h2 class="lang" data-en="How to Play" data-uk="Як грати">How to Play</h2>
+        <p class="lang" data-en="Deberts is a trick-taking card game played with a 32-card deck (7s to Aces). Here's how the game works:" 
+           data-uk="Деберц - це карткова гра з взятками, яка грається колодою з 32 карт (від сімок до тузів). Ось як це працює:">
+           Deberts is a trick-taking card game played with a 32-card deck (7s to Aces). Here's how the game works:
+        </p>
+        <ol>
+            <li class="lang" data-en="Game Setup: 2 to 4 players, each receives 6 cards." data-uk="Налаштування гри: 2-4 гравці, кожен отримує по 6 карт.">Game Setup: 2 to 4 players, each receives 6 cards.</li>
+            <li class="lang" data-en="Trump Suit: The trump suit is determined by the cards dealt." data-uk="Козир: Козирна масть визначається розданими картами.">Trump Suit: The trump suit is determined by the cards dealt.</li>
+            <li class="lang" data-en="Scoring: Earn points based on captured cards and combinations." data-uk="Набір очок: Заробляйте очки за захоплені карти та комбінації.">Scoring: Earn points based on captured cards and combinations.</li>
+            <li class="lang" data-en="Winning: The player/team with the highest score wins!" data-uk="Перемога: Гравець/команда з найбільшою кількістю очок перемагає!">Winning: The player/team with the highest score wins!</li>
+        </ol>
+        <button id="show-screenshots" class="lang" data-en="Show Screenshots" data-uk="Показати скріншоти">Show Screenshots</button>
+    </div>
+
+    <!-- Screenshots Section (Hidden by default) -->
+    <div class="section screenshots" id="screenshots">
+        <h2 class="lang" data-en="Screenshots" data-uk="Скріншоти">Screenshots</h2>
+        <p class="lang" data-en="Here's a preview of our game:" data-uk="Ось попередній перегляд нашої гри:">Here's a preview of our game:</p>
+        <img src="screenshot1.jpg" alt="Deberts Game Screenshot 1" width="100%">
+        <img src="screenshot2.jpg" alt="Deberts Game Screenshot 2" width="100%">
+    </div>
+
+    <!-- Download Section -->
+    <div class="section" id="download">
+        <h2 class="lang" data-en="Download the App" data-uk="Завантажте додаток">Download the App</h2>
+        <p class="lang" data-en="Ready to play Deberts? Download now from the Google Play Store!" data-uk="Готові грати в Деберц? Завантажуйте зараз з Google Play Store!">Ready to play Deberts? Download now from the Google Play Store!</p>
+        <a href="https://play.google.com" target="_blank"><button class="lang" data-en="Download on Google Play" data-uk="Завантажити з Google Play">Download on Google Play</button></a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+        <h2 class="lang" data-en="Contact Us" data-uk="Зв'яжіться з нами">Contact Us</h2>
+        <p class="lang" data-en="If you have any questions, feel free to reach out to us:" data-uk="Якщо у вас є питання, не соромтеся звертатися до нас:">If you have any questions, feel free to reach out to us:</p>
+        <p>Email: quickdeveloping@gmail.com</p>
+        <p class="lang" data-en="Follow us on Facebook, Instagram, and Twitter." data-uk="Слідкуйте за нами в Facebook, Instagram та Twitter.">Follow us on Facebook, Instagram, and Twitter.</p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Oleksandr Vosmushko | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+</footer>
+
+<!-- jQuery Script -->
+<script>
+    $(document).ready(function() {
+        // Language switcher
+        $("#en").click(function() {
+            $(".lang").each(function() {
+                $(this).text($(this).data('en'));
+            });
+        });
+        $("#uk").click(function() {
+            $(".lang").each(function() {
+                $(this).text($(this).data('uk'));
+            });
+        });
+
+        // Show screenshots when the button is clicked
+        $("#show-screenshots").click(function() {
+            $("#screenshots").slideToggle();
+        });
+    });
+</script>
+
+</body>
+</html>
