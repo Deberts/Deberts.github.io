@@ -1,0 +1,36 @@
+Game rules
+
+Deberts has many rule variants. The table settings determine the number of players, target score (301, 501 or 1001), team play and whether Bella requires winning a trick. Local games have no move timer; online games allow 30, 45 or 60 seconds per move.
+
+Cards and points
+
+The game uses 32 cards: seven through ace in each suit.
+Non-trump cards, strongest first: ace (11), ten (10), king (4), queen (3), jack (2), nine (0), eight (0), seven (0).
+Trump cards, strongest first: jack (20), nine (14), ace (11), ten (10), king (4), queen (3), eight (0), seven (0).
+The last trick is worth an additional 10 points.
+
+Declarations
+
+Tierce: three consecutive cards in the same suit, worth 20 points.
+Deberts: four consecutive cards in the same suit, worth 50 points.
+Bella: the king and queen of trump, worth 20 points.
+
+Tierce and deberts are declared during the first round of tricks. Declarations are compared by their highest card. Deberts beats tierce. For otherwise equal declarations, trump wins; if neither is trump, the first declaration in turn order wins. A stronger opposing declaration cancels the weaker declarations. You must win at least one trick for declarations to count toward your score.
+
+Bella is declared when playing the king or queen of trump. The table setting controls whether winning the trick is required for Bella to count.
+
+Choosing trump
+
+Turns proceed clockwise. Players initially receive six cards each. The remaining deck is placed in the middle, with a face-up card showing the proposed trump suit.
+During the first bidding round, each player may accept the proposed suit or pass. In the second round, a player may choose any other suit. If everyone passes, the player with the forced bid must choose trump.
+Once trump is chosen, players receive three more cards each. The declarer leads the first trick.
+
+Playing a trick
+
+Follow the lead suit when possible. If you cannot follow suit, play trump when required; if you have neither the lead suit nor trump, play another card. When playing trump, you must beat the current winning trump when possible.
+Trump beats any non-trump card. Otherwise, the strongest card in the lead suit wins the trick. The trick winner leads the next trick.
+
+Scoring
+
+At the end of the hand, card points, valid declarations and the last-trick bonus are counted. A player who takes no tricks receives a penalty of 100 points. A declarer who loses the hand receives a bait; three baits also incur a 100-point penalty.
+The next player takes the forced-bid position for the next hand. Continue playing until the target score is reached. In a team game, partners share a score.
